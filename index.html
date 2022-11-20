@@ -5,12 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>home</title>
-        <link rel="stylesheet" href="./src/style/reset.css" />
-        <link rel="stylesheet" href="./src/style/style.css" />
-        <script
-            src="https://kit.fontawesome.com/18ed08835c.js"
-            crossorigin="anonymous"
-        ></script>
+        <link rel="stylesheet" href="src/style/reset.css" />
+        <link rel="stylesheet" href="src/style/style.css" />
+        <script src="https://kit.fontawesome.com/77ad8525ff.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <article class="container">
@@ -18,9 +15,7 @@
             <section class="cont-btns">
                 <h2 class="hidden">참석자추가 및 계산버튼</h2>
                 <div class="cont-parti-btn-list">
-                    <button type="button" class="btn-add-participant">
-                        참석자추가
-                    </button>
+                    <button type="button" class="btn-add-participant">참석자추가</button>
                     <ul class="list-participants">
                         <li>
                             <div>메타몽</div>
@@ -32,46 +27,54 @@
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="btn-calc-distance">
-                    중간거리계산
-                </button>
+                <button type="button" class="btn-calc-distance">중간거리계산</button>
             </section>
-            <div>
-                <h2>주변 지하철역 정보</h2>
-                <ul>
-                    <li>홍대입구역</li>
-                    <li>신촌역</li>
+
+            <div class="cont-result">
+                <h2 class="result-title">주변 지하철역 정보</h2>
+                <ul class="result-list">
+                    <li class="is-active"><button type="button">홍대입구역</button></li>
+                    <li><button type="button">신촌역</button></li>
                 </ul>
             </div>
-            <div>
-                <h2>지도</h2>
+            <div class="cont-map">
+                <h2 class="hidden">지도</h2>
             </div>
+
+            <aside class="modal-detail">
+                <h2 class="detail-title">홍대입구역</h2>
+
+                <div class="detail-item is-transfer">
+                    <strong>환승역</strong>
+                    <ul>
+                        <li class="is-line2">2호선</li>
+                        <li class="is-gyeongui">경의중앙선</li>
+                        <li class="is-airport">공항철도</li>
+                    </ul>
+                </div>
+
+                <div class="detail-item is-address">
+                    <strong>도로명 주소</strong>
+                    <p>서울특별시 마포구 양화로 지하160(동교동)</p>
+                </div>
+
+                <div class="detail-item is-phone">
+                    <strong>전화번호</strong>
+                    <p>02-123-4567</p>
+                </div>
+
+                <div class="group-btns">
+                    <button class="btn-close" type="button">닫기</button>
+                </div>
+            </aside>
         </article>
 
         <article class="modal">
             <h2 class="hidden">참석자 위치 입력 모달창</h2>
             <input type="text" placeholder="참석자 이름" /><br />
-            <input
-                type="text"
-                placeholder="출발위치를 도로명주소로 입력해주세요!"
-            />
+            <input type="text" placeholder="출발위치를 도로명주소로 입력해주세요!" />
             <i class="fa-solid fa-magnifying-glass"></i><br />
             <button class="btn-close">닫기 버튼</button>
         </article>
-        <aside>
-            <h2>홍대입구역</h2>
-            <strong>환승역</strong>
-            <ul>
-                <li>2호선</li>
-                <li>경의중앙선</li>
-                <li>공항철도</li>
-            </ul>
-
-            <strong>도로명 주소</strong>
-            <p>서울특별시 마포구 양화로 지하160(동교동)</p>
-
-            <strong>전화번호</strong>
-            <p>02-123-4567</p>
-        </aside>
     </body>
 </html>
