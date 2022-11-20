@@ -1,0 +1,75 @@
+:root {
+    --font-color: #fff;
+    --main-color: #1040cf;
+}
+
+.hidden {
+    position: absolute;
+    clip-path: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* container */
+
+.container {
+    position: relative;
+    background-image: url(/src/img/bg.jpg);
+    background-size: cover;
+    color: var(--font-color);
+}
+
+.txt-title {
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+/* section */
+
+.cont-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cont-parti-btn-list {
+    display: flex;
+}
+
+.btn-add-participant {
+    height: 23px;
+    background-color: var(--font-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+}
+
+.btn-calc-distance {
+    height: 24px;
+    background-color: var(--font-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+}
+
+/* modal */
+
+.modal {
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--font-color);
+    padding: 2rem;
+    height: 80px;
+    border-radius: 4px;
+}
