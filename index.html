@@ -4,7 +4,49 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title></title>
+        <title>home</title>
+        <link rel="stylesheet" href="./src/style/reset.css" />
+        <link rel="stylesheet" href="./src/style/style.css" />
+        <script
+            src="https://kit.fontawesome.com/18ed08835c.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
-    <body></body>
+    <body>
+        <article class="container">
+            <h1 class="txt-title">where-center?</h1>
+            <section class="cont-btns">
+                <h2 class="hidden">참석자추가 및 계산버튼</h2>
+                <div class="cont-parti-btn-list">
+                    <button type="button" class="btn-add-participant">
+                        참석자추가
+                    </button>
+                    <ul class="list-participants">
+                        <li>
+                            <div>메타몽</div>
+                            <div>서울역 1호선</div>
+                        </li>
+                        <li>
+                            <div>농담곰</div>
+                            <div>용산역 1호선</div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn-calc-distance">
+                    중간거리계산
+                </button>
+            </section>
+        </article>
+
+        <article class="modal">
+            <h2 class="hidden">참석자 위치 입력 모달창</h2>
+            <input type="text" placeholder="참석자 이름" /><br />
+            <input
+                type="text"
+                placeholder="출발위치를 도로명주소로 입력해주세요!"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i><br />
+            <button class="btn-close">닫기 버튼</button>
+        </article>
+    </body>
 </html>
