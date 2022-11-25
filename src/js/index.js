@@ -1,3 +1,5 @@
 import requestData from './requestData.js';
+import showStation from './showStation.js';
 
-requestData();
+const data = await requestData();
+showStation(data);
