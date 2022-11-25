@@ -34,15 +34,17 @@
                 <div class="cont-result">
                     <h2 class="result-title">주변 지하철역 정보</h2>
                     <ul class="result-list">
-                        <li class="is-active"><button type="button">홍대입구역</button></li>
-                        <li><button type="button">신촌역</button></li>
+                        <!-- <li class="is-active">
+                            <button type="button">홍대입구역</button>
+                        </li>
+                        <li><button type="button">신촌역</button></li> -->
                     </ul>
                 </div>
-                <div class="cont-map">
+                <div class="cont-map" id="map">
                     <h2 class="hidden">지도</h2>
                 </div>
 
-                <aside class="modal-detail is-active">
+                <!-- <aside class="modal-detail">
                     <h2 class="detail-title">홍대입구역</h2>
 
                     <div class="detail-item is-transfer">
@@ -67,7 +69,7 @@
                     <div class="group-btns">
                         <button class="btn-close" type="button">닫기</button>
                     </div>
-                </aside>
+                </aside> -->
             </div>
         </article>
 
@@ -78,5 +80,9 @@
             <i class="fa-solid fa-magnifying-glass"></i><br />
             <button class="btn-close">닫기 버튼</button>
         </article>
+
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=893dc666a8f8748997d5a9432093fcdb&libraries=services,clusterer,drawing"></script>
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script type="module" src="./src/js/index.js"></script>
     </body>
 </html>
