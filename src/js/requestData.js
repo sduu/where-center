@@ -1,13 +1,10 @@
-const $container = document.querySelector('.container');
-
-let subwayData = [];
-
 export default async function init() {
-    await requestData();
+    return await requestData();
 }
 
 // API 요청
 const requestData = async (page = 1) => {
+    let subwayData = [];
     const options = {
         page,
         perPage: 288,
@@ -21,6 +18,8 @@ const requestData = async (page = 1) => {
         const [위도, 경도] = await addressSearch(data['도로명주소']);
         subwayData.push({...data, 위도, 경도});
     }
+
+    return subwayData;
 };
 
 // 위도, 경도 가져오기
