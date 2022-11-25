@@ -73,3 +73,11 @@
     height: 80px;
     border-radius: 4px;
 }
+
+
+/* map */
+
+#staticMap {
+    width:600px;
+    height:350px;
+}
