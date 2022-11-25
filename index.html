@@ -5,9 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>home</title>
-        <link rel="stylesheet" href="src/style/reset.css" />
-        <link rel="stylesheet" href="src/style/style.css" />
-        <script src="https://kit.fontawesome.com/77ad8525ff.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./src/style/reset.css" />
+        <link rel="stylesheet" href="./src/style/style.css" />
+        <script
+            src="https://kit.fontawesome.com/18ed08835c.js"
+            crossorigin="anonymous"
+        ></script>
+        
     </head>
     <body>
         <article class="container">
@@ -42,6 +46,7 @@
                 </div>
                 <div class="cont-map" id="map">
                     <h2 class="hidden">지도</h2>
+                    <div id="staticMap"></div>
                 </div>
 
                 <!-- <aside class="modal-detail">
@@ -81,8 +86,11 @@
             <button class="btn-close">닫기 버튼</button>
         </article>
 
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c00499c7cee22f1efce256ad356640dd"></script>
+        <script src="./src/js/loadMap.js"></script>
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=893dc666a8f8748997d5a9432093fcdb&libraries=services,clusterer,drawing"></script>
         <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
         <script type="module" src="./src/js/index.js"></script>
+        
     </body>
 </html>
