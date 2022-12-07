@@ -94,10 +94,15 @@ button {
     border-radius: 4px;
 }
 
+/* map */
+
+#staticMap {
+    width:600px;
+    height:350px;
+}
 /* result */
 .section-result {
-    display: flex;
-    /* display: none; */
+    display: none;
     position: relative;
     position: fixed;
     top: 50%;
@@ -165,12 +170,14 @@ button {
     font-weight: 900;
 }
 
-.cont-result .result-list li.is-active button,
+
+.cont-result .result-list li button.is-active,
 .cont-result .result-list li button:hover {
     background-color: var(--point);
 }
 
 .cont-map {
+    position: relative;
     flex: 1 1 auto;
     width: auto;
     height: 400px;
@@ -249,6 +256,12 @@ button {
     border: 1px solid var(--main-color);
     border-radius: 4px;
 }
+
+
+.info-window {
+    background-color: var(--white);
+}
+
 
 @media screen and (max-width: 716px) {
     .section-result {
