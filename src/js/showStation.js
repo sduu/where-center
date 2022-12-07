@@ -1,32 +1,20 @@
 const $container = document.querySelector('.container');
 const $resultList = $container.querySelector('.section-result .result-list');
 
-let map;
 let subwayData = [];
 let filteredData = [];
 let markers = [];
 let customOverlays = [];
 
-export default async function init(data) {
+export default async function init(data, map) {
     subwayData = data;
     // map = await initMap();
-    checkCircleRange();
+    checkCircleRange(map);
     createListItem();
 }
 
-// 맵 초기화
-const initMap = () => {
-    const container = document.getElementById('map');
-    const options = {
-        center: new kakao.maps.LatLng(37.5571594835988, 126.972554606456),
-        level: 2,
-    };
-
-    return new kakao.maps.Map(container, options);
-};
-
 // 좌표가 범위안에 포함되어있는지 체크 후 마커 표시
-const checkCircleRange = () => {
+const checkCircleRange = (map) => {
     const options = {
         center: new kakao.maps.LatLng(37.5601594835988, 126.975554606456),
         radius: 700,

@@ -102,8 +102,7 @@ button {
 }
 /* result */
 .section-result {
-    display: flex;
-    /* display: none; */
+    display: none;
     position: relative;
     position: fixed;
     top: 50%;
