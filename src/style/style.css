@@ -170,6 +170,7 @@ button {
     font-weight: 900;
 }
 
+
 .cont-result .result-list li button.is-active,
 .cont-result .result-list li button:hover {
     background-color: var(--point);
@@ -256,9 +257,11 @@ button {
     border-radius: 4px;
 }
 
+
 .info-window {
     background-color: var(--white);
 }
+
 
 @media screen and (max-width: 716px) {
     .section-result {
