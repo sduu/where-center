@@ -100,10 +100,10 @@ button {
   width: 600px;
   height: 350px;
 }
+
 /* result */
 .section-result {
-  display: none;
-  position: relative;
+  display: flex;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -112,6 +112,13 @@ button {
   width: calc(100% - 80px);
   color: var(--dark);
   z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.section-result.is-active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .section-result::before {

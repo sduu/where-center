@@ -1,8 +1,7 @@
 import roadAdrr from './roadAdrr.js';
 import requestData from './requestData.js';
-import showStation from './showStation.js';
+import loadMap from './loadMap.js';
 
-await roadAdrr();
-
-// const data = await requestData();
-// showStation(data);
+const data = await requestData();
+const map = await loadMap();
+roadAdrr(data, map);
