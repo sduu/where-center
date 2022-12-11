@@ -73,8 +73,32 @@ export default function roadAdrr(apiData, map) {
     });
     map.setBounds(bounds);
 
+
+    // 선 그리기 시작
+    // 선을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 선을 표시합니다
+    var linePath = [
+        new kakao.maps.LatLng(position2, position1),
+        new kakao.maps.LatLng(position4, position3),
+        new kakao.maps.LatLng(center_y, center_x) 
+    ];
+
+    // 지도에 표시할 선을 생성합니다
+    var polyline = new kakao.maps.Polyline({
+        path: linePath, // 선을 구성하는 좌표배열 입니다
+        strokeWeight: 5, // 선의 두께 입니다
+        strokeColor: '#FFAE00', // 선의 색깔입니다
+        strokeOpacity: 0.7, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+        strokeStyle: 'solid' // 선의 스타일입니다
+    });
+
+    // 지도에 선을 표시합니다 
+    // 선 그리기 끝
+    
+    
     checkCircleRange();
     createListItem();
+    polyline.setMap(map);  
+    
   });
 
   // 좌표가 범위안에 포함되어있는지 체크 후 마커 표시
