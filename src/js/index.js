@@ -1,8 +1,10 @@
 import './../style/reset.css';
-import './../style/style.css';
-import roadAdrr from "./roadAdrr.js";
-import requestData from "./requestData.js";
-import loadMap from "./loadMap.js";
+import './../style/search.css';
+import './../style/result.css';
+
+import roadAdrr from './roadAdrr.js';
+import requestData from './requestData.js';
+import loadMap from './loadMap.js';
 
 (async () => {
   const data = await requestData();
@@ -10,4 +12,3 @@ import loadMap from "./loadMap.js";
 
   roadAdrr(data, map);
 })();
-
