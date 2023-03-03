@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hidden {
+  position: absolute;
+  clip-path: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
