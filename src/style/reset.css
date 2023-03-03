@@ -46,3 +46,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+* {
+	box-sizing: border-box;
+  }
+  
+  html {
+	font-size: 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+  }
+
+  :root {
+	--dark: #333;
+	--white: #fff;
+	--gray: #cdcdcd;
+	--point: #d2e6e3;
+	--green: #0ab185;
+	--yellow: #f2c34e;
+	--font-color: #fff;
+	--main-color: #1040cf;
+  }

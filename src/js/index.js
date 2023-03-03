@@ -1,5 +1,5 @@
-import './../style/reset.css';
-import './../style/style.css';
+import "./../style/reset.css";
+import "./../style/nav.css";
 import roadAdrr from "./roadAdrr.js";
 import requestData from "./requestData.js";
 import loadMap from "./loadMap.js";
@@ -10,4 +10,3 @@ import loadMap from "./loadMap.js";
 
   roadAdrr(data, map);
 })();
-
