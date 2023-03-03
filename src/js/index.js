@@ -1,6 +1,7 @@
 import './../style/reset.css';
 import './../style/search.css';
 import './../style/result.css';
+import "./../style/nav.css";
 
 import roadAdrr from './roadAdrr.js';
 import requestData from './requestData.js';
