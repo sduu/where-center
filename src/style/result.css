@@ -1,0 +1,61 @@
+.section-result {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 18px;
+  border-radius: 26px 26px 0 0;
+  box-shadow: 17.4893px 1.39915px 62.9615px rgba(0, 0, 0, 0.25);
+  overflow: auto;
+  background-color: #fff;
+}
+
+.section-result .result-title {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #000;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.section-result .result-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-result .result-list li + li {
+  margin-top: 23px;
+}
+
+.section-result .result-list span {
+  display: block;
+  width: 72px;
+  height: 72px;
+  border: 2px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.section-result .result-list li:nth-child(odd) span {
+  background: url('./../img/user.png') no-repeat 0 0 / cover;
+}
+
+.section-result .result-list li:nth-child(even) span {
+  background: url('./../img/user2.png') no-repeat 0 0 / cover;
+}
+
+.section-result .result-list li:nth-child(3n) span {
+  background: url('./../img/user3.png') no-repeat 0 0 / cover;
+}
+
+.section-result .result-list strong {
+  color: #000;
+  font-size: 16px;
+}
+
+.section-result .result-list p {
+  margin-top: 5px;
+  color: #244eb9;
+  font-size: 12px;
+  font-weight: 500;
+}

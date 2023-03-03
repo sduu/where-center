@@ -73,3 +73,13 @@ table {
 	--font-color: #fff;
 	--main-color: #1040cf;
   }
+
+.hidden {
+  position: absolute;
+  clip-path: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+

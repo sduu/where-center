@@ -7,10 +7,10 @@
     <title>home</title>
     <!-- <link rel="stylesheet" href="./src/style/reset.css" /> -->
     <!-- <link rel="stylesheet" href="./src/style/style.css" /> -->
-    <script
-      src="https://kit.fontawesome.com/18ed08835c.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/18ed08835c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <article class="container">
@@ -33,58 +33,65 @@
         <button type="button" class="btn-calc-distance">중간거리계산</button>
       </section>
 
-      <div class="section-result">
-        <div class="cont-result">
-          <h2 class="result-title">주변 지하철역 정보</h2>
-          <ul class="result-list">
-            <!-- <li class="is-active">
-                            <button type="button">홍대입구역</button>
-                        </li>
-                        <li><button type="button">신촌역</button></li> -->
-          </ul>
+      <div class="section-search">
+        <h2 class="search-title">참석자 추가</h2>
+        <div class="search-inputs">
+          <label>
+            <input type="search" placeholder="이름을 입력하세요" />
+          </label>
+          <label>
+            <input type="search" placeholder="주소를 검색하세요" />
+          </label>
         </div>
-        <div class="cont-map" id="map">
+
+        <div class="search-title-wrap">
+          <h3 class="search-sub-title">추가한 리스트</h3>
+        </div>
+        <ul class="search-user-list">
+          <li>
+            <strong>ABC Company</strong>
+            <p>Jl. Merah Biru Nomor 123</p>
+          </li>
+          <li>
+            <strong>ABC Company</strong>
+            <p>Jl. Merah Biru Nomor 123</p>
+          </li>
+          <li>
+            <strong>ABC CompanyABC Company ABC Company</strong>
+            <p>Jl. Merah Biru Nomor 123 Jl. Merah Biru Nomor 123 Jl. Merah Biru Nomor 123</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-result">
+        <h2 class="result-title">주변 지하철역 정보</h2>
+        <ul class="result-list">
+          <li>
+            <span></span>
+            <div>
+              <strong>홍대입구</strong>
+              <p>2호선, 경의중앙선, 공항철도</p>
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div>
+              <strong>신촌역</strong>
+              <p>2호선</p>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="cont-map" id="map">
           <h2 class="hidden">지도</h2>
           <div id="staticMap"></div>
-        </div>
-
-        <!-- <aside class="modal-detail">
-                    <h2 class="detail-title">홍대입구역</h2>
-
-                    <div class="detail-item is-transfer">
-                        <strong>환승역</strong>
-                        <ul>
-                            <li class="is-line2">2호선</li>
-                            <li class="is-gyeongui">경의중앙선</li>
-                            <li class="is-airport">공항철도</li>
-                        </ul>
-                    </div>
-
-                    <div class="detail-item is-address">
-                        <strong>도로명 주소</strong>
-                        <p>서울특별시 마포구 양화로 지하160(동교동)</p>
-                    </div>
-
-                    <div class="detail-item is-phone">
-                        <strong>전화번호</strong>
-                        <p>02-123-4567</p>
-                    </div>
-
-                    <div class="group-btns">
-                        <button class="btn-close" type="button">닫기</button>
-                    </div>
-                </aside> -->
+        </div> -->
       </div>
     </article>
 
     <article class="modal">
       <h2 class="hidden">참석자 위치 입력 모달창</h2>
       <input class="input-name" type="text" placeholder="참석자 이름" /><br />
-      <input
-        class="input-addr"
-        type="text"
-        placeholder="출발위치를 도로명주소로 입력해주세요!"
-      />
+      <input class="input-addr" type="text" placeholder="출발위치를 도로명주소로 입력해주세요!" />
       <i class="fa-solid fa-magnifying-glass"></i><br />
       <button class="btn-close">닫기 버튼</button>
       <nav class="nav-bottom">
@@ -101,10 +108,7 @@
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=893dc666a8f8748997d5a9432093fcdb&libraries=services,clusterer,drawing"
     ></script> -->
-    <script
-      type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=<%=KAKAO_KEY%>&libraries=services,clusterer,drawing"
-    ></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=<%=KAKAO_KEY%>&libraries=services,clusterer,drawing"></script>
     <!-- <script type="module" src="./src/js/index.js"></script> -->
     <!-- <script src="./dist/main.js"></script> -->
   </body>

@@ -1,0 +1,70 @@
+.section-search {
+  padding: 18px;
+  color: #000;
+  background-color: #fff;
+}
+
+.section-search .search-title {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.section-search .search-inputs label {
+  display: block;
+}
+
+.section-search .search-inputs label + label {
+  margin-top: 24px;
+}
+
+.section-search .search-inputs input {
+  width: 100%;
+  height: 41px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 14px;
+  font-size: 14px;
+  background: #f0f0f0 url('./../img/icon_search.svg') no-repeat 14px center / 15px auto;
+}
+
+.section-search .search-inputs input::placeholder {
+  color: #787878;
+}
+
+.section-search .search-title-wrap {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.section-search .search-sub-title {
+  position: relative;
+  display: inline-block;
+  top: 0.5em;
+  text-align: center;
+  padding: 0 10px;
+  color: #244eb9;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.section-search .search-user-list {
+  border-top: 1px solid #ccc;
+  color: #000;
+}
+
+.section-search .search-user-list li {
+  padding: 24px 0 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+.section-search .search-user-list strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-search .search-user-list p {
+  margin-top: 10px;
+  font-size: 12px;
+}
