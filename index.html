@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>home</title>
-        <link rel="stylesheet" href="./src/style/reset.css" />
-        <link rel="stylesheet" href="./src/style/style.css" />
-        <script src="https://kit.fontawesome.com/18ed08835c.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <article class="container">
-            <h1 class="txt-title">where-center?</h1>
-            <section class="cont-btns">
-                <h2 class="hidden">참석자추가 및 계산버튼</h2>
-                <div class="cont-parti-btn-list">
-                    <button type="button" class="btn-add-participant">참석자추가</button>
-                    <ul class="list-participants">
-                        <!-- <li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <!-- <link rel="stylesheet" href="./src/style/reset.css" /> -->
+    <!-- <link rel="stylesheet" href="./src/style/style.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/18ed08835c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article class="container">
+      <h1 class="txt-title">where-center?</h1>
+      <section class="cont-btns">
+        <h2 class="hidden">참석자추가 및 계산버튼</h2>
+        <div class="cont-parti-btn-list">
+          <button type="button" class="btn-add-participant">참석자추가</button>
+          <ul class="list-participants">
+            <!-- <li>
                             <div>메타몽</div>
                             <div>서울역 1호선</div>
                         </li>
@@ -25,27 +28,27 @@
                             <div>농담곰</div>
                             <div>용산역 1호선</div>
                         </li> -->
-                    </ul>
-                </div>
-                <button type="button" class="btn-calc-distance">중간거리계산</button>
-            </section>
+          </ul>
+        </div>
+        <button type="button" class="btn-calc-distance">중간거리계산</button>
+      </section>
 
-            <div class="section-result">
-                <div class="cont-result">
-                    <h2 class="result-title">주변 지하철역 정보</h2>
-                    <ul class="result-list">
-                        <!-- <li class="is-active">
+      <div class="section-result">
+        <div class="cont-result">
+          <h2 class="result-title">주변 지하철역 정보</h2>
+          <ul class="result-list">
+            <!-- <li class="is-active">
                             <button type="button">홍대입구역</button>
                         </li>
                         <li><button type="button">신촌역</button></li> -->
-                    </ul>
-                </div>
-                <div class="cont-map" id="map">
-                    <h2 class="hidden">지도</h2>
-                    <div id="staticMap"></div>
-                </div>
+          </ul>
+        </div>
+        <div class="cont-map" id="map">
+          <h2 class="hidden">지도</h2>
+          <div id="staticMap"></div>
+        </div>
 
-                <!-- <aside class="modal-detail">
+        <!-- <aside class="modal-detail">
                     <h2 class="detail-title">홍대입구역</h2>
 
                     <div class="detail-item is-transfer">
@@ -71,18 +74,31 @@
                         <button class="btn-close" type="button">닫기</button>
                     </div>
                 </aside> -->
-            </div>
-        </article>
+      </div>
+    </article>
 
-        <article class="modal">
-            <h2 class="hidden">참석자 위치 입력 모달창</h2>
-            <input class="input-name" type="text" placeholder="참석자 이름" /><br />
-            <input class="input-addr" type="text" placeholder="출발위치를 도로명주소로 입력해주세요!" />
-            <i class="fa-solid fa-magnifying-glass"></i><br />
-            <button class="btn-close">닫기 버튼</button>
-        </article>
+    <article class="modal">
+      <h2 class="hidden">참석자 위치 입력 모달창</h2>
+      <input class="input-name" type="text" placeholder="참석자 이름" /><br />
+      <input
+        class="input-addr"
+        type="text"
+        placeholder="출발위치를 도로명주소로 입력해주세요!"
+      />
+      <i class="fa-solid fa-magnifying-glass"></i><br />
+      <button class="btn-close">닫기 버튼</button>
+    </article>
 
-        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-        <script type="module" src="./src/js/index.js"></script>
-    </body>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <!-- <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=893dc666a8f8748997d5a9432093fcdb&libraries=services,clusterer,drawing"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=<%=KAKAO_KEY%>&libraries=services,clusterer,drawing"
+    ></script>
+    <!-- <script type="module" src="./src/js/index.js"></script> -->
+    <!-- <script src="./dist/main.js"></script> -->
+  </body>
 </html>
