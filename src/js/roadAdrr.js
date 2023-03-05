@@ -1,6 +1,7 @@
 export default function roadAdrr(apiData, map) {
   const $sectionSearch = document.querySelector('.section-search');
   const $sectionResult = document.querySelector('.section-result');
+  const $resultTitle = $sectionResult.querySelector('.result-title');
   const $resultList = $sectionResult.querySelector('.result-list');
   const $btnOpenResult = document.querySelector('.nav-item.item-map-location-result');
   const $searchList = document.querySelector('.search-user-list');
@@ -147,7 +148,7 @@ export default function roadAdrr(apiData, map) {
 
   // 인포윈도우 생성
   const createCustomOverlay = (역명, 위도, 경도) => {
-    const content = `<div class="info-subway">${역명}</div>`;
+    const content = `<div class="info-subway">${역명}역</div>`;
     const customOverlay = new kakao.maps.InfoWindow({
       position: new kakao.maps.LatLng(경도, 위도),
       content,
@@ -163,5 +164,5 @@ export default function roadAdrr(apiData, map) {
   };
 
   $btnOpenResult.addEventListener('click', openSearchResult);
-  $sectionResult.addEventListener('click', expandSearchResult);
+  $resultTitle.addEventListener('click', expandSearchResult);
 }
