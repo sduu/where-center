@@ -15,8 +15,7 @@ module.exports = {
   mode: 'development',
   plugins: [
     new webpack.DefinePlugin({
-      KAKAO_KEY: JSON.stringify(process.env.KAKAO_KEY),
-      PUBLIC_KEY: JSON.stringify(process.env.PUBLIC_KEY),
+      'process.env': JSON.stringify(dotenv.config().parsed),
     }),
     new HtmlWebpackPlugin({
       template: './index.html',
