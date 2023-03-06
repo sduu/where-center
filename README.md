@@ -1,5 +1,9 @@
 # Where center? 우리의 중간 장소
 
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+
 ![목업이미지](목업 이미지 주소)
 
 ### [지금 바로 이용해보기!👆](https://astounding-chimera-e693f7.netlify.app/)
@@ -18,7 +22,7 @@
 🙌 약속을 잡을 때 친구와 나의 중간 지점을 알기 어려우셨나요?
 Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장소를 선택 할 수 있도록 도와주는 웹 서비스입니다.
 
-📝 유저의 이름 및 주소 입력시 유저들간 중간 지점 계산 기능을 제공합니다.
+📝 약속 참석자의 이름 및 주소 입력시 참석자들간 중간 지점 계산 기능을 제공합니다.
 
 🚊 중간 지점 근처의 역 정보를 제공하여, 세부적인 약속장소를 지정하는데 도움을 제공합니다.
 
@@ -31,6 +35,7 @@ Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장
 - VSCode
 - 서비스 배포 환경: Netlify
 - 협업 환경: Git, GitHub, Notion, VSCode Live Share
+- 페어 프로그래밍
 
 ### 1.2 기술 스택
 
@@ -52,8 +57,9 @@ Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장
 
 - 기능 별로 코드관리를 하기 위하여 기능단위로 커밋하였습니다.
 - 커밋 타입은 영어 소문자로 시작하였습니다.
-- feat, fix, refactor, style, design, docs, chore와 같이 일반적으로 통용되는 타입을 사용하였습니다.
-- 주제는 최대한 자세하게 변경 사항을 알아보기 편하도록 작성하였습니다.
+- feat, fix, refactor, style, docs와 같이 일반적으로 통용되는 타입을 사용하였습니다.
+- 커밋 내용은 변경 사항을 알아보기 편하도록 구체적으로 작성하였습니다.
+- 관련 이슈 존재 시 이슈 번호를 커밋 내용에 포함하였습니다.
 
 ## 2. 팀원 소개
 
@@ -63,34 +69,14 @@ Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장
 
 ## 3. 기능 구현
 
-- ### 홈
+- ### 참석자 정보 입력 및 중간 장소 계산
 
-## 4. 트러블 슈팅
+  ![1](https://user-images.githubusercontent.com/100075245/223092980-56e818a7-e3ee-432a-b582-9949d53fad51.gif)
 
-### 혜수
-
-**문제**
-
-- ~~ 오류 발견.
-
-**해결법**
-
-### 윤정
-
-**문제**
-
-- ~~오류 발견.
-
-**해결법**
-
-## 5. 프로젝트를 진행하며 느낀점
-
-| 이름 | 느낀 점 |
-| :--: | ------- |
+- ### 주변 지하철역 목록 생성
+  ![2](https://user-images.githubusercontent.com/100075245/223095101-f2d1a702-09be-4afa-80ae-8b1c39814812.gif)
 
 ---
-
-<!-- Stack Icon Refernces -->
 
 [프로필1]: https://avatars.githubusercontent.com/u/46313348?v=4
 [프로필2]: https://avatars.githubusercontent.com/u/100075245?v=4
@@ -98,7 +84,5 @@ Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장
 [서윤정]: https://github.com/annasyun
 
 ```
-🌍 현재는 총 2명 참여자간의 중간거리 계산기능과 서울 지역의 역 정보를 제공중이며, 추후 참여자 3명이상의 거리 계산 기능과 전국 역 정보제공 기능을 업데이트 할 예정입니다.
-
-💜 피드백은 ~~@gmail.com으로 메일 주시면 감사하겠습니다.
+🌍 현재는 총 2명 유저의 중간거리 계산기능과 서울 지역의 역 정보를 제공중이며, 추후 참여자 3명이상의 거리 계산 기능과 전국 역 정보제공 기능을 업데이트 할 예정입니다.
 ```
