@@ -1,21 +1,21 @@
 export default function addUser(map) {
-  const $btnOpenSearch = document.querySelector('.nav-item.item-user');
-  const $btnOpenResult = document.querySelector('.nav-item.item-map-location-result');
-  const $sectionSearch = document.querySelector('.section-search');
-  const $searchList = document.querySelector('.search-user-list');
-  const $inputName = $sectionSearch.querySelector('.input-name');
-  const $inputAddr = $sectionSearch.querySelector('.input-addr');
+  const $btnOpenSearch = document.querySelector(".nav-item.item-user");
+  const $btnOpenResult = document.querySelector(".nav-item.item-map-location-result");
+  const $sectionSearch = document.querySelector(".section-search");
+  const $searchList = document.querySelector(".search-user-list");
+  const $inputName = $sectionSearch.querySelector(".input-name");
+  const $inputAddr = $sectionSearch.querySelector(".input-addr");
 
   const markers = [];
 
   const openSearchPopup = () => {
-    $sectionSearch.classList.toggle('is-active');
+    $sectionSearch.classList.toggle("is-active");
   };
 
   const addParticipantsItem = ({ name, addr }) => {
-    const li = document.createElement('li');
-    const participant = document.createElement('strong');
-    const address = document.createElement('p');
+    const li = document.createElement("li");
+    const participant = document.createElement("strong");
+    const address = document.createElement("p");
 
     participant.textContent = name;
     address.textContent = addr;
@@ -27,17 +27,13 @@ export default function addUser(map) {
 
   const searchAddr = () => {
     if ($inputName.value.length === 0) {
-      alert('참석자의 이름을 먼저 입력해주세요.');
+      alert("참석자의 이름을 먼저 입력해주세요.");
       $inputName.focus();
       return;
     }
 
     const name = $inputName.value;
-    var width = 400; //팝업의 너비
-    var height = 500; //팝업의 높이
     new daum.Postcode({
-      width: width,
-      height: height,
       oncomplete: function (data) {
         // 포스트 코드 입력 후 주소를 지오코더로 변환한다
         const geocoder = new kakao.maps.services.Geocoder();
@@ -70,19 +66,16 @@ export default function addUser(map) {
         geocoder.addressSearch(data.address, callback);
 
         addParticipantsItem({ name, addr: data.address });
-        $inputName.value = '';
-        $inputAddr.value = '';
+        $inputName.value = "";
+        $inputAddr.value = "";
 
         if ($searchList.childElementCount > 1) {
-          $btnOpenResult.classList.add('is-active');
+          $btnOpenResult.classList.add("is-active");
         }
       },
-    }).open({
-      left: 500,
-      top: 200,
-    });
+    }).open();
   };
 
-  $btnOpenSearch.addEventListener('click', openSearchPopup);
-  $inputAddr.addEventListener('click', searchAddr);
+  $btnOpenSearch.addEventListener("click", openSearchPopup);
+  $inputAddr.addEventListener("click", searchAddr);
 }
