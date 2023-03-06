@@ -4,7 +4,8 @@
   <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 
-![목업이미지](목업 이미지 주소)
+![목업이미지](https://user-images.githubusercontent.com/100075245/223126968-d26008d9-972b-48a4-a1c4-171b920e230d.png)
+
 
 ### [지금 바로 이용해보기!👆](https://sduu.github.io/where-center/)
 
@@ -63,28 +64,28 @@ Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장
 
 ## 2. 팀원 소개
 
-| ![프로필1] | ![프로필2] |
-| :--------: | :--------: |
-|  [손혜수]  |  [서윤정]  |
+| <img src="https://avatars.githubusercontent.com/u/46313348?v=4" width="80%"> | <img src="https://avatars.githubusercontent.com/u/100075245?v=4" width="80%"> |
+| :--------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+|                                   [손혜수]                                   |                                   [서윤정]                                    |
 
 ## 3. 기능 구현
 
-- ### 참석자 정보 입력 및 중간 장소 계산
+PC Web ver.
 
-|                                                     web                                                      |                                                    mobile                                                    |
+- ### PC
+
+|                                        참석자 정보 입력 및 중간 장소 계산                                            |                                                 주변 지하철역 목록 생성                                                    |
 | :----------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
-| ![1](https://user-images.githubusercontent.com/100075245/223092980-56e818a7-e3ee-432a-b582-9949d53fad51.gif) | ![01](https://user-images.githubusercontent.com/46313348/223116415-1a24cc97-15e6-42f3-b06f-b964ff0601d5.gif) |
+| <img src="https://user-images.githubusercontent.com/100075245/223092980-56e818a7-e3ee-432a-b582-9949d53fad51.gif" width="80%"> | <img src="https://user-images.githubusercontent.com/100075245/223095101-f2d1a702-09be-4afa-80ae-8b1c39814812.gif" width="80%"> |
 
-- ### 주변 지하철역 목록 생성
+- ### Mobile
 
-|                                                     web                                                      |                                                    mobile                                                    |
+|                                        참석자 정보 입력 및 중간 장소 계산                                            |                                                 주변 지하철역 목록 생성                                                     |
 | :----------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: |
-| ![2](https://user-images.githubusercontent.com/100075245/223095101-f2d1a702-09be-4afa-80ae-8b1c39814812.gif) | ![02](https://user-images.githubusercontent.com/46313348/223116444-0de539e2-30b0-43a0-9744-b8969869f56d.gif) |
+| ![01](https://user-images.githubusercontent.com/46313348/223116415-1a24cc97-15e6-42f3-b06f-b964ff0601d5.gif) | ![02](https://user-images.githubusercontent.com/46313348/223116444-0de539e2-30b0-43a0-9744-b8969869f56d.gif) |
+
 
 ---
-
-[프로필1]: https://avatars.githubusercontent.com/u/46313348?v=4
-[프로필2]: https://avatars.githubusercontent.com/u/100075245?v=4
 [손혜수]: https://github.com/sduu
 [서윤정]: https://github.com/annasyun
 
