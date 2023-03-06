@@ -1,6 +1,4 @@
 export default async function initMap() {
-  const sectionResult = document.querySelector('.section-result');
-
   const staticMapContainer = document.getElementById('staticMap'), // 이미지 지도를 표시할 div
     staticMapOption = {
       center: new kakao.maps.LatLng(37.5691888810787, 126.997678048457), // 이미지 지도의 중심좌표
