@@ -69,15 +69,15 @@ Where center?는 그 불편함을 해소하고, 모두가 만족하는 약속장
 
 ## 3. 기능 구현
 
-- ### 참석자 정보 입력 및 중간 장소 계산
-
-  ![1](https://user-images.githubusercontent.com/100075245/223092980-56e818a7-e3ee-432a-b582-9949d53fad51.gif)
-
-- ### 주변 지하철역 목록 생성
-  ![2](https://user-images.githubusercontent.com/100075245/223095101-f2d1a702-09be-4afa-80ae-8b1c39814812.gif)
+PC Web ver.
+| 참석자 정보 입력 및 중간 장소 계산 | 주변 지하철역 목록 생성 |
+| :------------------------: |:---------------------: |
+| ![1] |![2] |
 
 ---
 
+[1]: https://user-images.githubusercontent.com/100075245/223092980-56e818a7-e3ee-432a-b582-9949d53fad51.gif
+[2]: https://user-images.githubusercontent.com/100075245/223095101-f2d1a702-09be-4afa-80ae-8b1c39814812.gif
 [프로필1]: https://avatars.githubusercontent.com/u/46313348?v=4
 [프로필2]: https://avatars.githubusercontent.com/u/100075245?v=4
 [손혜수]: https://github.com/sduu
